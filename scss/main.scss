@@ -38,7 +38,7 @@ body {
 		border: none;
 		border-radius: 50%;
 		cursor: pointer;
-		outline: 1px solid transparent;
+		outline: 1px solid transpar ent;
 		transition: 0.3s;
 
 		i {
@@ -54,5 +54,57 @@ body {
 		&:focus {
 			border: 1px solid clr.$light-color;
 		}
+	}
+}
+
+.nav {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	transform: translateX(100%);
+	background-image: clr.$green-gradient;
+	transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+	z-index: 10;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	}
+
+	&__list-item {
+		position: relative;
+		padding: 0.5em;
+		margin: 0 1em;
+		font-size: 3rem;
+		font-weight: normal;
+		text-decoration: none;
+		color: clr.$light-color;
+		transition: 0.5s;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 3px;
+			background-color: clr.$light-color;
+			transform: scaleY(0);
+			transition: transform 0.5s;
+			transform-origin: bottom;
+		}
+	}
+
+	&__list-item:hover::before {
+		transform: scaleY(1);
+		transform-origin: top;
+	}
+
+	&--active {
+		transform: translateX(0%);
 	}
 }
