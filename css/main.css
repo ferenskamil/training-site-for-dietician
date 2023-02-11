@@ -1,7 +1,35 @@
 .wrapper {
   margin: 0 auto;
+  padding: 2em;
   width: 100%;
   max-width: 1200px;
+}
+
+.section-headline {
+  padding-top: 2em;
+  margin-bottom: 1em;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #00a866;
+  color: #00a866;
+}
+
+.link-btn {
+  padding: 0.5em 1em;
+  font-size: 1.6rem;
+  color: #ffffd0;
+  background-color: #a80042;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  cursor: pointer;
+}
+.link-btn:hover {
+  background-color: #00a866;
+  box-shadow: 0 0 10px #65ba5b;
 }
 
 .custom-shape-divider-bottom-1676068184 {
@@ -49,6 +77,12 @@
     height: 150px;
   }
 }
+@media (min-width: 768px) {
+  .section-headline {
+    padding-top: 0;
+    font-size: 3rem;
+  }
+}
 @media (min-width: 1200px) {
   .custom-shape-divider-bottom-1676068184 svg {
     height: 200px;
@@ -65,7 +99,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+button,
+input,
+textarea {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -78,11 +115,12 @@ body {
 .burger-btn button {
   width: 50px;
   height: 50px;
+  padding: 0;
   background-color: transparent;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  outline: 1px solid transpar ent;
+  outline: 1px solid transparent;
   transition: 0.3s;
 }
 .burger-btn button i {
@@ -171,11 +209,42 @@ body {
   margin-bottom: 5%;
 }
 
+.about .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .wrapper .about__description {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.about .wrapper .about__description p {
+  margin-bottom: 1em;
+}
+.about .wrapper .about__description .link-btn {
+  align-self: center;
+}
+.about .wrapper .about__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .wrapper .about__image img {
+  align-items: center;
+  height: 500px;
+}
+
 @media (min-width: 576px) {
   .header h1 {
     font-size: 4rem;
   }
   .header p {
+    font-size: 2rem;
+  }
+  .about .wrapper .about__description {
     font-size: 2rem;
   }
 }
@@ -188,5 +257,13 @@ body {
   }
   .nav__list-item {
     font-size: 4rem;
+  }
+  .about .wrapper {
+    flex-direction: row;
+    align-content: flex-start;
+  }
+  .about .wrapper .about__description {
+    width: 50%;
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
