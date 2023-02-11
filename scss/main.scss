@@ -1,0 +1,25 @@
+// Fonts downladed from Google Fonts
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// =======================================
+
+// Linked .scss files
+@use './colors' as clr;
+@use './components';
+@use './mixins' as m;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	// żeby nam się strona płynnie przesuwała
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
