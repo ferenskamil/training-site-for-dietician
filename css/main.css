@@ -1,8 +1,12 @@
 .wrapper {
   margin: 0 auto;
-  padding: 2em;
+  padding: 0 2em;
   width: 100%;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-headline {
@@ -54,7 +58,7 @@
 
 .custom-shape-divider-top-1676068554 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -65,7 +69,7 @@
   position: relative;
   display: block;
   width: calc(118% + 1.3px);
-  height: 116px;
+  height: 50px;
 }
 
 .custom-shape-divider-top-1676068554 .shape-fill {
@@ -73,7 +77,8 @@
 }
 
 @media (min-width: 576px) {
-  .custom-shape-divider-bottom-1676068184 svg {
+  .custom-shape-divider-bottom-1676068184 svg,
+  .custom-shape-divider-top-1676068554 svg {
     height: 150px;
   }
 }
@@ -84,7 +89,8 @@
   }
 }
 @media (min-width: 1200px) {
-  .custom-shape-divider-bottom-1676068184 svg {
+  .custom-shape-divider-bottom-1676068184 svg,
+  .custom-shape-divider-top-1676068554 svg {
     height: 200px;
   }
 }
@@ -104,6 +110,11 @@ button,
 input,
 textarea {
   font-family: "Montserrat", sans-serif;
+}
+
+section,
+main {
+  position: relative;
 }
 
 .burger-btn {
@@ -235,6 +246,19 @@ textarea {
 .about .wrapper .about__image img {
   align-items: center;
   height: 500px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 150px 0;
+  background-image: linear-gradient(0deg, rgba(10, 86, 56, 0.867), rgba(0, 0, 0, 0.75)), url("../img/benefits.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (min-width: 576px) {

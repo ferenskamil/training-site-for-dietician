@@ -27,6 +27,11 @@ textarea {
 	font-family: 'Montserrat', sans-serif;
 }
 
+section,
+main {
+	position: relative;
+}
+
 // NAV
 .burger-btn {
 	position: fixed;
@@ -179,6 +184,21 @@ textarea {
 			}
 		}
 	}
+}
+
+// BENEFITS
+.benefits {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	// Padding top-bottom have to varies with svg height
+	padding: 150px 0;
+	background-image: clr.$hero-gradient-dark, url('../img/benefits.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 // ========================
