@@ -46,3 +46,23 @@
 .custom-shape-divider-top-1676068554 .shape-fill {
 	fill: #ffffff;
 }
+
+// MEDIA QUERIES
+@media (min-width: 576px) {
+	.custom-shape-divider-bottom-1676068184 svg {
+		height: 150px;
+	}
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1200px) {
+	.custom-shape-divider-bottom-1676068184 svg {
+		height: 200px;
+	}
+}
+@media (min-width: 1400px) {
+}

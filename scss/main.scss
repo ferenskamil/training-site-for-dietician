@@ -139,3 +139,42 @@ body {
 		margin-bottom: 5%;
 	}
 }
+
+// ========================
+// MEDIA QUERIES
+@media (min-width: 576px) {
+	.header {
+		h1 {
+			font-size: 4rem;
+		}
+
+		p {
+			font-size: 2rem;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		h1 {
+			font-size: 5rem;
+		}
+
+		p {
+			font-size: 2.4rem;
+		}
+	}
+
+	.nav {
+		&__list-item {
+			font-size: 4rem;
+		}
+	}
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
