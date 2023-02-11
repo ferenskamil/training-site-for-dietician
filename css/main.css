@@ -319,10 +319,12 @@ main {
 .diets__box:hover .diets__box-img {
   opacity: 0;
   transform: rotateY(180deg);
+  z-index: 0;
 }
 .diets__box:hover .diets__box-info {
   opacity: 1;
   transform: rotateY(0);
+  z-index: 10;
 }
 .diets__box-img {
   display: flex;
