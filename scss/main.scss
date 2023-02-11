@@ -252,6 +252,7 @@ main {
 		border-radius: 8px;
 		perspective: 1000px;
 		transition: 0.5s;
+		z-index: 1000;
 
 		&:hover {
 			.diets__box-img {
@@ -354,6 +355,9 @@ main {
 		padding: 1em 0;
 	}
 }
+
+// REVIEWS
+
 
 // ========================
 // MEDIA QUERIES
