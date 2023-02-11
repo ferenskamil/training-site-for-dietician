@@ -20,6 +20,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
                 rel="stylesheet">
 
+        <!-- slick.js -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
         <!-- CSS  -->
         <link rel="stylesheet" href="./css/main.css">
 
@@ -207,41 +210,50 @@
 
                 <section class="reviews dark-section">
                         <h1 class="section-headline">Opinie</h1>
-                        <!-- <i class="fa-solid fa-quote-left"></i>
-                        <i class="fa-solid fa-quote-right"></i> -->
-                        <div class="reviews__box">
-                                <div class="reviews__box-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ea? lorem100
-                                        </p>
-                                        <strong>Regina Kowalska</strong>
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        <i class="fa-solid fa-quote-right"></i>
-                                </div>
+                        <div class="wrapper">
+                                <div class="reviews__boxes">
+                                        <div class="reviews__box">
+                                                <div class="reviews__box-description">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Modi, ea?
+                                                                lorem100
+                                                        </p>
+                                                        <strong>Regina Kowalska</strong>
+                                                        <i class="fa-solid fa-quote-left"></i>
+                                                        <i class="fa-solid fa-quote-right"></i>
+                                                </div>
 
-                                <div class="reviews__box-img"></div>
-                        </div>
-                        <div class="reviews__box">
-                                <div class="reviews__box-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ea? lorem100
-                                        </p>
-                                        <strong>Regina Kowalska</strong>
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        <i class="fa-solid fa-quote-right"></i>
-                                </div>
+                                                <div class="reviews__box-img reviews__box-img--first"></div>
+                                        </div>
+                                        <div class="reviews__box">
+                                                <div class="reviews__box-description">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Modi, ea?
+                                                                lorem100
+                                                        </p>
+                                                        <strong>Katarzyna Nowak</strong>
+                                                        <i class="fa-solid fa-quote-left"></i>
+                                                        <i class="fa-solid fa-quote-right"></i>
+                                                </div>
 
-                                <div class="reviews__box-img"></div>
-                        </div>
-                        <div class="reviews__box">
-                                <div class="reviews__box-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ea? lorem100
-                                        </p>
-                                        <strong>Regina Kowalska</strong>
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        <i class="fa-solid fa-quote-right"></i>
-                                </div>
+                                                <div class="reviews__box-img reviews__box-img--second"></div>
+                                        </div>
+                                        <div class="reviews__box">
+                                                <div class="reviews__box-description">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Modi, ea?
+                                                                lorem100
+                                                        </p>
+                                                        <strong>Jan Kowalski</strong>
+                                                        <i class="fa-solid fa-quote-left"></i>
+                                                        <i class="fa-solid fa-quote-right"></i>
+                                                </div>
 
-                                <div class="reviews__box-img"></div>
+                                                <div class="reviews__box-img reviews__box-img--third"></div>
+                                        </div>
+                                </div>
                         </div>
+
                         <div class="custom-shape-divider-top-1676068554">
                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                                         preserveAspectRatio="none">
@@ -257,6 +269,16 @@
                         </div>
                 </section>
         </main>
+
+        <!-- jQuery -->
+        <script type=" text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <!-- CDN from slick.js -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!-- my file slickSettings.js  -->
+        <script src="./js/slickSettings.js"></script>
 
         <!-- JavaScript -->
         <script src="./js/main.js"></script>

@@ -408,15 +408,18 @@ main {
 .reviews .section-headline {
   color: #ffffd0;
 }
+.reviews__boxes {
+  width: 100%;
+}
 .reviews__box {
   position: relative;
+  width: 100%;
   margin: 1em 0;
   padding: 50px 1em 1em;
 }
 .reviews__box .reviews__box-description {
   position: relative;
   padding: calc(45px + 1em) 1em 1em 1em;
-  width: 100%;
   min-height: 100px;
   background-color: #ffffd0;
 }
@@ -450,19 +453,19 @@ main {
   transform: translate(-50%, 0);
   width: 90px;
   height: 90px;
-  background-image: url(../img/reviews1.jpg);
   background-size: cover;
   background-position: center;
   border: 3px solid #ffffd0;
   border-radius: 50%;
 }
-.reviews__box-img img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+.reviews__box-img--first {
+  background-image: url(../img/reviews1.jpg);
+}
+.reviews__box-img--second {
+  background-image: url(../img/reviews2.jpg);
+}
+.reviews__box-img--third {
+  background-image: url(../img/reviews3.jpg);
 }
 
 @media (min-width: 576px) {
@@ -529,6 +532,17 @@ main {
   }
   .diets__box {
     width: 45%;
+  }
+  .reviews__box .reviews__box-description {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+  }
+  .reviews__box .reviews__box-description p {
+    font-size: 1.8rem;
+  }
+  .reviews__box .reviews__box-description strong {
+    font-size: 2rem;
   }
 }
 @media (min-width: 992px) {
