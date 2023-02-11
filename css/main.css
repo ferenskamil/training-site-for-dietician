@@ -438,10 +438,10 @@ main {
   color: #00a866;
 }
 .reviews__box .reviews__box-description .fa-quote-left {
-  left: 10%;
+  left: 15%;
 }
 .reviews__box .reviews__box-description .fa-quote-right {
-  left: 90%;
+  left: 85%;
 }
 .reviews__box-img {
   position: absolute;
