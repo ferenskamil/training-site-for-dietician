@@ -11,7 +11,17 @@ $pure-white: #fff;
 $light-white: #eee;
 $dark: #2e2e2e;
 
-$green-gradient: linear-gradient(45deg, rgb(0, 168, 102), rgb(101, 186, 91));
+$green-gradient: linear-gradient(45deg, rgba(17, 138, 90), rgba(58, 106, 53));
+$green-blue-gradient: linear-gradient(
+	45deg,
+	rgb(32, 191, 85),
+	rgb(1, 186, 239)
+);
+$light-blue-gradient-solid: radial-gradient(
+	circle at top right,
+	rgb(0, 78, 255) 0%,
+	rgb(0, 212, 255) 100%
+);
 
 $hero-gradient: linear-gradient(
 	0deg,

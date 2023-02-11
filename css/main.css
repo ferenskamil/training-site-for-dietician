@@ -1,12 +1,12 @@
 .wrapper {
-  margin: 0 auto;
-  padding: 0 2em;
-  width: 100%;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 2em;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .section-headline {
@@ -165,7 +165,7 @@ main {
   width: 100vw;
   height: 100vh;
   transform: translateX(100%);
-  background-image: linear-gradient(45deg, rgb(0, 168, 102), rgb(101, 186, 91));
+  background-image: linear-gradient(45deg, rgb(17, 138, 90), rgb(58, 106, 53));
   transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   z-index: 10;
 }
@@ -271,7 +271,7 @@ main {
 .benefits .section-headline {
   color: #ffffd0;
 }
-.benefits .wrapper .benefits__box {
+.benefits .benefits__box {
   display: flex;
   flex-direction: column-reverse;
   margin: 1em 0;
@@ -280,28 +280,122 @@ main {
   border-radius: 8px;
   overflow: hidden;
 }
-.benefits .wrapper .benefits__box .benefits__box-description {
+.benefits .benefits__box .benefits__box-description {
   height: 50%;
   padding: 1em;
   background-color: #ffffd0;
   z-index: 1;
 }
-.benefits .wrapper .benefits__box .benefits__box-description .benefits__box-title {
+.benefits .benefits__box .benefits__box-description .benefits__box-title {
   font-size: 2rem;
 }
-.benefits .wrapper .benefits__box .benefits__box-description p {
+.benefits .benefits__box .benefits__box-description p {
   margin-top: 0.5em;
   font-size: 1.6rem;
 }
-.benefits .wrapper .benefits__box .benefits__box-photo {
+.benefits .benefits__box .benefits__box-photo {
   height: 50%;
 }
-.benefits .wrapper .benefits__box .benefits__box-photo img {
+.benefits .benefits__box .benefits__box-photo img {
   width: 100%;
   transition: transform 0.5s;
 }
-.benefits .wrapper .benefits__box .benefits__box-photo img:hover {
+.benefits .benefits__box .benefits__box-photo img:hover {
   transform: scale(1.1);
+}
+
+.diets {
+  padding-top: 5em;
+}
+.diets__box {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  margin: 1em;
+  border-radius: 8px;
+  perspective: 1000px;
+  transition: 0.5s;
+}
+.diets__box:hover .diets__box-img {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+.diets__box:hover .diets__box-info {
+  opacity: 1;
+  transform: rotateY(0);
+}
+.diets__box-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: 0.5s;
+  z-index: 10;
+}
+.diets__box-img p {
+  align-self: flex-end;
+  padding: 1em;
+  font-size: 1.6rem;
+  color: #ffffd0;
+}
+.diets__box-img--first {
+  background-image: linear-gradient(0deg, rgba(0, 168, 102, 0.75), rgba(0, 0, 0, 0.75)), url(../img/diets1.jpg);
+}
+.diets__box-img--second {
+  background-image: linear-gradient(0deg, rgba(0, 168, 102, 0.75), rgba(0, 0, 0, 0.75)), url(../img/diets2.jpg);
+}
+.diets__box-img--third {
+  background-image: linear-gradient(0deg, rgba(0, 168, 102, 0.75), rgba(0, 0, 0, 0.75)), url(../img/diets3.jpg);
+}
+.diets__box-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  border-radius: 8px;
+  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
+  opacity: 1;
+  transform: rotateY(-180deg);
+  transition: 0.5s;
+  z-index: -5;
+}
+.diets__box-info .link-btn {
+  align-self: center;
+}
+.diets__box-info .link-btn:hover {
+  background-color: #0016ff;
+}
+.diets__box-list {
+  width: 100%;
+  text-align: center;
+  color: #fff5a7;
+  width: 80%;
+  list-style: none;
+}
+.diets__box-list-item {
+  font-size: 1.6rem;
+  padding: 1em;
+  border-bottom: 1px solid #fff5a7;
+}
+.diets__box-list-item:last-child {
+  border-bottom: 1px solid transparent;
+}
+.diets__box-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffd0;
+  padding: 1em 0;
 }
 
 @media (min-width: 576px) {
@@ -362,9 +456,23 @@ main {
   .benefits .wrapper .benefits__box .benefits__box-photo img {
     height: 100%;
   }
+  .diets .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .diets__box {
+    width: 45%;
+  }
 }
 @media (min-width: 992px) {
   .benefits .wrapper .benefits__box {
     width: 80%;
+  }
+  .diets .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .diets__box {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
