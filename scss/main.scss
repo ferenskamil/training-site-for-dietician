@@ -448,6 +448,48 @@ main {
 	}
 }
 
+// CONTACT
+.contact {
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		&-label {
+			width: 100%;
+			font-size: 1.6rem;
+		}
+
+		&-input {
+			margin-bottom: 1em;
+			padding: 0.5em;
+			width: 100%;
+			border-radius: 8px;
+			border: 1px solid black;
+		}
+
+		&-textarea {
+			margin-bottom: 1em;
+			padding: 0.5em;
+			width: 100%;
+			border-radius: 8px;
+			border: 1px solid black;
+			resize: vertical;
+		}
+
+		.link-btn {
+			align-self: flex-end;
+		}
+	}
+
+	p {
+		width: 80%;
+		font-size: 1.6rem;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+}
+
+
 // ========================
 // MEDIA QUERIES
 @media (min-width: 576px) {
@@ -561,6 +603,12 @@ main {
 					font-size: 2rem;
 				}
 			}
+		}
+	}
+
+	.contact {
+		&__form {
+			width: 80%;
 		}
 	}
 }

@@ -269,12 +269,24 @@
                         </div>
                 </section>
                 <section class="contact" id="contact">
-
                         <div class="wrapper">
                                 <h1 class="section-headline">Kontakt</h1>
-                                <p>Zajmuję się również układaniem indywidualnych diet. Tą usługę szczególnie polecam
+                                <!-- <p>Zajmuję się również układaniem indywidualnych diet. Tą usługę szczególnie polecam
                                         osobom, które potrzebują specjalnej diety ze względów zdrowotnych.</p>
-                                <p>Ten formularz jest połączony z moim mailem. Napisz do mnie, a </p>
+                                <p>Ten formularz jest połączony z moim mailem. Napisz do mnie, a odpowiem na Twoją
+                                        wiadomość w ciągu 48h!</p> -->
+
+                                <form class="contact__form">
+                                        <label for="name-input" class="contact__form-label">Podaj swoje imię:</label>
+                                        <input id="name-input" type="text" class="contact__form-input">
+                                        <label for="email-input" class="contact__form-label">Twój adres email:</label>
+                                        <input id="email-input" type="text" class="contact__form-input">
+                                        <label for="contact__form-textarea" class="contact__form-label">Treść
+                                                wiadomości:</label>
+                                        <textarea class="contact__form-textarea" id="contact__form-textarea" cols="20"
+                                                rows="10"></textarea>
+                                        <a href="#diets" class="link-btn">Sprawdź!</a>
+                                </form>
                         </div>
 
                 </section>
