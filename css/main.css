@@ -309,7 +309,7 @@ main {
 }
 .diets__box {
   position: relative;
-  height: 450px;
+  height: 500px;
   width: 100%;
   margin: 1em;
   border-radius: 8px;
@@ -355,15 +355,15 @@ main {
   background-image: linear-gradient(0deg, rgba(0, 168, 102, 0.75), rgba(0, 0, 0, 0.75)), url(../img/diets3.jpg);
 }
 .diets__box-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 2em;
   border-radius: 8px;
   background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
@@ -397,7 +397,7 @@ main {
   text-align: center;
   font-size: 2rem;
   color: #ffffd0;
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
 .reviews {

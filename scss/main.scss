@@ -246,7 +246,7 @@ main {
 	padding-top: 5em;
 	&__box {
 		position: relative;
-		height: 450px;
+		height: 500px;
 		width: 100%;
 		margin: 1em;
 		border-radius: 8px;
@@ -303,20 +303,19 @@ main {
 	}
 
 	&__box-info {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 		padding: 2em;
 		border-radius: 8px;
 		background-image: clr.$light-blue-gradient-solid;
 		opacity: 1;
-		// display: none;
 		transform: rotateY(-180deg);
 		transition: 0.5s;
 		z-index: -5;
@@ -352,7 +351,7 @@ main {
 		text-align: center;
 		font-size: 2rem;
 		color: clr.$light-color;
-		padding: 1em 0;
+		padding: 0.5em 0;
 	}
 }
 
