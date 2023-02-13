@@ -5,6 +5,7 @@
 
 // Linked .scss files
 @use './colors' as clr;
+@use './fonts' as f;
 @use './components';
 @use './mixins' as m;
 
@@ -15,7 +16,6 @@
 }
 
 html {
-	font-size: 62.5%;
 	// żeby nam się strona płynnie przesuwała
 	scroll-behavior: smooth;
 }
@@ -30,10 +30,6 @@ textarea {
 section,
 main {
 	position: relative;
-}
-
-p {
-	font-size: 1.6rem;
 }
 
 // NAV
@@ -147,8 +143,6 @@ p {
 	p {
 		width: 80%;
 		text-align: center;
-		font-size: 1.6rem;
-		font-weight: 400;
 		margin-bottom: 5%;
 	}
 }
@@ -163,8 +157,6 @@ p {
 		.about__description {
 			display: flex;
 			flex-direction: column;
-			font-size: 1.6rem;
-			line-height: 1.5;
 
 			p {
 				margin-bottom: 1em;
@@ -203,11 +195,7 @@ p {
 	background-size: cover;
 	background-attachment: fixed;
 
-	.section-headline {
-		color: clr.$light-color;
-	}
-
-	.benefits__box {
+	&__box {
 		display: flex;
 		flex-direction: column-reverse;
 		margin: 1em 0;
@@ -215,23 +203,18 @@ p {
 		background-color: clr.$light-color;
 		border-radius: 8px;
 		overflow: hidden;
-		.benefits__box-description {
+		&-description {
 			height: 50%;
 			padding: 1em;
 			background-color: clr.$light-color;
 			z-index: 1;
 
-			.benefits__box-title {
-				font-size: 2rem;
-			}
-
 			p {
 				margin-top: 0.5em;
-				font-size: 1.6rem;
 			}
 		}
 
-		.benefits__box-photo {
+		&-photo {
 			height: 50%;
 			img {
 				width: 100%;
@@ -289,7 +272,6 @@ p {
 
 		p {
 			align-self: flex-end;
-			font-size: 1.6rem;
 			color: clr.$light-color;
 		}
 
@@ -341,7 +323,6 @@ p {
 		list-style: none;
 
 		&-item {
-			font-size: 1.6rem;
 			padding: 1em;
 			border-bottom: 1px solid clr.$fourth-color;
 
@@ -353,7 +334,6 @@ p {
 
 	&__box-title {
 		text-align: center;
-		font-size: 2rem;
 		color: clr.$light-color;
 		padding: 0.5em 0;
 	}
@@ -380,23 +360,12 @@ p {
 		margin: 1em 0;
 		padding: 50px 1em 1em;
 
-		.reviews__box-description {
+		&-description {
 			position: relative;
 			padding: calc(45px + 1em) 1em 1em 1em;
-			// width: 100%;
 			min-height: 100px;
 			background-color: clr.$light-color;
-
-			p {
-				font-size: 1.6rem;
-				color: clr.$main-color;
-				margin-bottom: 0.5em;
-			}
-
-			strong {
-				font-size: 1.6rem;
-				color: clr.$main-color;
-			}
+			color: clr.$main-color;
 
 			.fa-quote-left,
 			.fa-quote-right {
@@ -404,7 +373,6 @@ p {
 				transform: translate(-50%, -50%);
 				top: 25px;
 				font-size: 3rem;
-				color: clr.$main-color;
 			}
 
 			.fa-quote-left {
@@ -460,7 +428,6 @@ p {
 		width: 100%;
 		&-label {
 			width: 100%;
-			font-size: 1.6rem;
 		}
 
 		&-input {
@@ -483,13 +450,6 @@ p {
 		.link-btn {
 			align-self: flex-end;
 		}
-	}
-
-	p {
-		width: 80%;
-		font-size: 1.6rem;
-		text-align: center;
-		margin-bottom: 1em;
 	}
 }
 
@@ -514,7 +474,7 @@ p {
 		margin-bottom: 2em;
 		width: 100%;
 
-		h1 {
+		h3 {
 			text-transform: uppercase;
 			text-align: center;
 			margin: 1em;
@@ -527,7 +487,6 @@ p {
 			text-align: center;
 			line-height: 1.7;
 			color: clr.$light-white;
-			font-size: 1.4rem;
 
 			span {
 				padding: 0.3em 0.6em;
@@ -596,14 +555,6 @@ p {
 			font-size: 2rem;
 		}
 	}
-
-	.about {
-		.wrapper {
-			.about__description {
-				font-size: 2rem;
-			}
-		}
-	}
 }
 @media (min-width: 768px) {
 	.header {
@@ -618,7 +569,7 @@ p {
 
 	.nav {
 		&__list-item {
-			font-size: 4rem;
+			font-size: 3.5rem;
 		}
 	}
 
@@ -629,7 +580,6 @@ p {
 
 			.about__description {
 				width: 50%;
-				font-size: 2rem;
 			}
 		}
 	}
@@ -651,13 +601,6 @@ p {
 					width: 50%;
 					height: 100%;
 					padding: 2em;
-					.benefits__box-title {
-						font-size: 3rem;
-					}
-
-					p {
-						font-size: 1.8rem;
-					}
 				}
 
 				.benefits__box-photo {
@@ -685,17 +628,10 @@ p {
 
 	.reviews {
 		&__box {
-			.reviews__box-description {
-				padding-left: 2em;
-				padding-right: 2em;
-				padding-bottom: 2em;
-				p {
-					font-size: 1.8rem;
-				}
-
-				strong {
-					font-size: 2rem;
-				}
+			&-description {
+				// padding-left: 2em;
+				// padding-right: 2em;
+				// padding-bottom: 2em;
 			}
 		}
 	}

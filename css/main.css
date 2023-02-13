@@ -1,3 +1,75 @@
+html {
+  font-size: 62.5%;
+}
+
+p,
+a,
+button,
+input,
+textarea,
+ul,
+li,
+label {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  p,
+  a,
+  button,
+  input,
+  textarea,
+  ul,
+  li,
+  label {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1100px) {
+  p,
+  a,
+  button,
+  input,
+  textarea,
+  ul,
+  li,
+  label {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  }
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -12,7 +84,6 @@
 .section-headline {
   padding-top: 2em;
   margin-bottom: 1em;
-  font-size: 2.4rem;
   text-align: center;
   color: #00a866;
   color: #00a866;
@@ -20,6 +91,9 @@
 
 .dark-section {
   padding: 50px 0;
+}
+.dark-section .section-headline {
+  color: #ffffd0;
 }
 
 .link-btn {
@@ -113,7 +187,6 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -127,10 +200,6 @@ textarea {
 section,
 main {
   position: relative;
-}
-
-p {
-  font-size: 1.6rem;
 }
 
 .burger-btn {
@@ -231,8 +300,6 @@ p {
 .header p {
   width: 80%;
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
   margin-bottom: 5%;
 }
 
@@ -245,8 +312,6 @@ p {
 .about .wrapper .about__description {
   display: flex;
   flex-direction: column;
-  font-size: 1.6rem;
-  line-height: 1.5;
 }
 .about .wrapper .about__description p {
   margin-bottom: 1em;
@@ -272,10 +337,7 @@ p {
   background-size: cover;
   background-attachment: fixed;
 }
-.benefits .section-headline {
-  color: #ffffd0;
-}
-.benefits .benefits__box {
+.benefits__box {
   display: flex;
   flex-direction: column-reverse;
   margin: 1em 0;
@@ -284,27 +346,23 @@ p {
   border-radius: 8px;
   overflow: hidden;
 }
-.benefits .benefits__box .benefits__box-description {
+.benefits__box-description {
   height: 50%;
   padding: 1em;
   background-color: #ffffd0;
   z-index: 1;
 }
-.benefits .benefits__box .benefits__box-description .benefits__box-title {
-  font-size: 2rem;
-}
-.benefits .benefits__box .benefits__box-description p {
+.benefits__box-description p {
   margin-top: 0.5em;
-  font-size: 1.6rem;
 }
-.benefits .benefits__box .benefits__box-photo {
+.benefits__box-photo {
   height: 50%;
 }
-.benefits .benefits__box .benefits__box-photo img {
+.benefits__box-photo img {
   width: 100%;
   transition: transform 0.5s;
 }
-.benefits .benefits__box .benefits__box-photo img:hover {
+.benefits__box-photo img:hover {
   transform: scale(1.1);
 }
 
@@ -346,7 +404,6 @@ p {
 }
 .diets__box-img p {
   align-self: flex-end;
-  font-size: 1.6rem;
   color: #ffffd0;
 }
 .diets__box-img--first {
@@ -390,7 +447,6 @@ p {
   list-style: none;
 }
 .diets__box-list-item {
-  font-size: 1.6rem;
   padding: 1em;
   border-bottom: 1px solid #fff5a7;
 }
@@ -399,7 +455,6 @@ p {
 }
 .diets__box-title {
   text-align: center;
-  font-size: 2rem;
   color: #ffffd0;
   padding: 0.5em 0;
 }
@@ -421,33 +476,24 @@ p {
   margin: 1em 0;
   padding: 50px 1em 1em;
 }
-.reviews__box .reviews__box-description {
+.reviews__box-description {
   position: relative;
   padding: calc(45px + 1em) 1em 1em 1em;
   min-height: 100px;
   background-color: #ffffd0;
-}
-.reviews__box .reviews__box-description p {
-  font-size: 1.6rem;
-  color: #00a866;
-  margin-bottom: 0.5em;
-}
-.reviews__box .reviews__box-description strong {
-  font-size: 1.6rem;
   color: #00a866;
 }
-.reviews__box .reviews__box-description .fa-quote-left,
-.reviews__box .reviews__box-description .fa-quote-right {
+.reviews__box-description .fa-quote-left,
+.reviews__box-description .fa-quote-right {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 25px;
   font-size: 3rem;
-  color: #00a866;
 }
-.reviews__box .reviews__box-description .fa-quote-left {
+.reviews__box-description .fa-quote-left {
   left: 15%;
 }
-.reviews__box .reviews__box-description .fa-quote-right {
+.reviews__box-description .fa-quote-right {
   left: 85%;
 }
 .reviews__box-img {
@@ -479,7 +525,6 @@ p {
 }
 .contact__form-label {
   width: 100%;
-  font-size: 1.6rem;
 }
 .contact__form-input {
   margin-bottom: 1em;
@@ -498,12 +543,6 @@ p {
 }
 .contact__form .link-btn {
   align-self: flex-end;
-}
-.contact p {
-  width: 80%;
-  font-size: 1.6rem;
-  text-align: center;
-  margin-bottom: 1em;
 }
 
 .footer {
@@ -525,7 +564,7 @@ p {
   margin-bottom: 2em;
   width: 100%;
 }
-.footer__box h1 {
+.footer__box h3 {
   text-transform: uppercase;
   text-align: center;
   margin: 1em;
@@ -537,7 +576,6 @@ p {
   text-align: center;
   line-height: 1.7;
   color: #eee;
-  font-size: 1.4rem;
 }
 .footer__box-link span {
   padding: 0.3em 0.6em;
@@ -589,9 +627,6 @@ p {
   .header p {
     font-size: 2rem;
   }
-  .about .wrapper .about__description {
-    font-size: 2rem;
-  }
 }
 @media (min-width: 768px) {
   .header h1 {
@@ -601,7 +636,7 @@ p {
     font-size: 2.4rem;
   }
   .nav__list-item {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .about .wrapper {
     flex-direction: row;
@@ -609,7 +644,6 @@ p {
   }
   .about .wrapper .about__description {
     width: 50%;
-    font-size: 2rem;
   }
   .benefits .wrapper .benefits__box {
     flex-direction: row;
@@ -626,12 +660,6 @@ p {
     height: 100%;
     padding: 2em;
   }
-  .benefits .wrapper .benefits__box .benefits__box-description .benefits__box-title {
-    font-size: 3rem;
-  }
-  .benefits .wrapper .benefits__box .benefits__box-description p {
-    font-size: 1.8rem;
-  }
   .benefits .wrapper .benefits__box .benefits__box-photo {
     display: flex;
     height: 100%;
@@ -646,17 +674,6 @@ p {
   }
   .diets__box {
     width: 45%;
-  }
-  .reviews__box .reviews__box-description {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
-  }
-  .reviews__box .reviews__box-description p {
-    font-size: 1.8rem;
-  }
-  .reviews__box .reviews__box-description strong {
-    font-size: 2rem;
   }
   .contact__form {
     width: 80%;
