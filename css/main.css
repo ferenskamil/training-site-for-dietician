@@ -555,9 +555,6 @@ p {
 .footer__box-desktop {
   display: none;
 }
-.footer p {
-  font-size: 1.3rem;
-}
 .footer__box-contact {
   align-self: center;
   margin-top: 1em;
