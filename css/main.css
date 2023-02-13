@@ -517,6 +517,7 @@ p {
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
+  gap: 2em;
 }
 .footer__box {
   display: flex;
