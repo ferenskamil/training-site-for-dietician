@@ -221,6 +221,7 @@ main {
 }
 .burger-btn button i {
   font-size: 3rem;
+  line-height: 50px;
   color: #ffffd0;
 }
 .burger-btn button:hover {
